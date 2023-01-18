@@ -2,7 +2,7 @@
   ## Methods
   
   # 1. mouse_move
-  Function to be called to move the mouse.</br>
+  Function to be called to move the mouse and click on the target location.</br>
   
   Function parameters:</br>
   1. x_target : x-coordinate of target; integer
