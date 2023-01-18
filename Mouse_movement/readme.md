@@ -1,14 +1,14 @@
   </t> The python file provides with a function to produce human-like mouse movement from initial cursor position to final cursor position. </br>
-  ## Methods
+  # Methods
   
-  # 1. mouse_move
+  ## 1. mouse_move
   Function to be called to move the mouse and click on the target location.</br>
   
   Function parameters:</br>
   1. x_target : x-coordinate of target; integer
   2. y_target : y-coordinate of target; integer
   
-  # 2. wind_mouse
+  ## 2. wind_mouse
   Helper function for mouse_move method. Implements Wind Mouse Movement algorithm (https://ben.land/post/2021/04/25/windmouse-human-mouse-movement/) to mimic non-machine
    like movement.</br>
    
