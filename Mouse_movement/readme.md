@@ -17,10 +17,10 @@
    2. start_y : Initial y-coordinate of cursor; int
    3. dest_x : Target x-coordinate; int
    4. dest_y : Target y-coordinate; int
-   5. G_0 - magnitude of the gravitational force; int
-   6. W_0 - magnitude of the wind force fluctuations; int
-   7. M_0 - maximum step size (velocity clip threshold); int
-   8. D_0 - distance where wind behavior changes from random to damped; int
+   5. G_0 : magnitude of the gravitational force; int
+   6. W_0 : magnitude of the wind force fluctuations; int
+   7. M_0 : maximum step size (velocity clip threshold); int
+   8. D_0 : distance where wind behavior changes from random to damped; int
   
   
     
