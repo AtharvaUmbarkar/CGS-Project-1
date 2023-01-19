@@ -67,7 +67,7 @@ def mouse_move(x_target,y_target):
     points = []
     ret = wind_mouse(x_init,y_init,x_target,y_target,G_0=12, W_0=3, M_0=80, D_0=50,move_mouse=lambda x,y: points.append([x,y]))
     for coord in points:
-        py.moveTo(coord)
+        py.moveTo(coord,duration=0.1)
     
     time.sleep(0.1)
 
