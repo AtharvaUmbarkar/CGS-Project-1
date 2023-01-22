@@ -10,14 +10,17 @@ from MouseMovement import mouse_move
 import subprocess
 
 process_1 = subprocess.run('npm install', cwd='./cgs-recaptcha', shell=True)
+
 time.sleep(5)
-process_2 = subprocess.Popen('exec npm run start',stdout=subprocess.PIPE, cwd='./cgs-recaptcha', shell=True)
+
+process_2 = subprocess.Popen('exec npm run start', stdout=subprocess.PIPE, cwd='./cgs-recaptcha', shell=True)
+
 time.sleep(5)
 
 url= 'http://localhost:3000/'  
 img = './resources/captcha-new.png'
-edge_url = '/usr/bin/microsoft-edge'
 
+edge_url = '/usr/bin/microsoft-edge'
 webbrowser.register('edge', None, webbrowser.BackgroundBrowser(edge_url))
 webbrowser.get('edge')
 
@@ -30,12 +33,12 @@ for i in range(3):
     py.hotkey('f5')
     time.sleep(5)
 
-    c = py.locateCenterOnScreen(img, confidence=0.5)
+    center = py.locateCenterOnScreen(img, confidence=0.5)
 
-    print(c)
+    print(center)
 
     time.sleep(2)
-    mouse_move(c.x, c.y)
+    mouse_move(center.x, center.y)
     time.sleep(0.1)
 
     py.click()
